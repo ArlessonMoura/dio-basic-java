@@ -17,7 +17,7 @@ public class Main {
                         |LI LI LI LI||LI||LI||LI||LI LI LI LI|   \s
                      ,,;;,;;;,;;;,;;;,;;;,;;;,;;;,;;,;;;,;;;,;;,,\s
                     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-                                
+                
                   Greetings, I am Oracle, your personal banking assistant.
                 I'm here to assist you every step to create your bank account.
                 """);
@@ -26,7 +26,7 @@ public class Main {
                 ||====================================================================||
                                         PRESS ENTER TO CONTINUE
                 ||====================================================================||
-                 """);
+                """);
         write.nextLine();
 
         ContaTerminal terminal = new ContaTerminal();
@@ -47,7 +47,7 @@ public class Main {
                            Branch ID: %d-%d
                            Balance: %.2f
                     ||====================================================================||
-                """.formatted(terminal.getClientName(), terminal.getAccountNumber(), terminal.getBankBranchId(),
+                    """.formatted(terminal.getClientName(), terminal.getAccountNumber(), terminal.getBankBranchId(),
                 terminal.getBankOperation(), terminal.getBalanceValue()));
 
     }

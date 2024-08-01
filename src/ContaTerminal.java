@@ -36,7 +36,7 @@ public class ContaTerminal {
                ||====================================================================||
                                         What is your name?
                ||====================================================================||
-                """);
+               """);
 
             clientName = write.nextLine();
             if (clientName != null && !clientName.isBlank()) {
@@ -46,7 +46,7 @@ public class ContaTerminal {
                                 %s
                                           beautiful name!
                ||====================================================================||
-                """.formatted(clientName));
+               """.formatted(clientName));
                 nameVerify = true;
             } else {
                 System.out.println("""
@@ -54,7 +54,7 @@ public class ContaTerminal {
                                    You need provide a Valid entry.
                ||====================================================================||
                                                 ||
-                """);
+               """);
             }
 
         }
@@ -71,7 +71,7 @@ public class ContaTerminal {
                                   Choose your account number ID
                                            4 numbers.
                ||====================================================================||
-                """);
+               """);
 
             try {
                 String userEntry = write.nextLine().trim();
@@ -82,7 +82,7 @@ public class ContaTerminal {
                        ||====================================================================||
                                                    You choose: %d
                        ||====================================================================||
-                        """.formatted(accountNumber));
+                       """.formatted(accountNumber));
                     accountVerify = true;
                 } else {
                     System.out.println("""
@@ -90,7 +90,7 @@ public class ContaTerminal {
                               Invalid input! Please enter exactly 4 numeric digits only.
                        ||====================================================================||
                                                         ||
-                        """);
+                       """);
                 }
 
             } catch (NumberFormatException e) {
@@ -99,7 +99,7 @@ public class ContaTerminal {
                                Invalid input! Please enter numeric values only.
                    ||====================================================================||
                                                     ||
-                    """);
+                   """);
             }
 
         }
@@ -115,7 +115,7 @@ public class ContaTerminal {
                                   Choose your bank branch number ID
                                            3 numbers.
                ||====================================================================||
-                """);
+               """);
 
             try {
                 String userEntry = write.nextLine().trim();
@@ -129,7 +129,7 @@ public class ContaTerminal {
                               Invalid input! Please enter exactly 3 numeric digits only.
                        ||====================================================================||
                                                         ||
-                        """);
+                       """);
                 }
 
             } catch (NumberFormatException e) {
@@ -138,7 +138,7 @@ public class ContaTerminal {
                                Invalid input! Please enter numeric values only.
                    ||====================================================================||
                                                     ||
-                    """);
+                   """);
             }
 
         }
@@ -154,7 +154,7 @@ public class ContaTerminal {
                                   Choose your operation bank number ID
                                          Just only 1 numbers.
                ||====================================================================||
-                """);
+               """);
 
             try {
                 String userEntry = write.nextLine().trim();
@@ -168,7 +168,7 @@ public class ContaTerminal {
                               Invalid input! Please enter exactly 1 numeric digits only.
                        ||====================================================================||
                                                         ||
-                        """);
+                       """);
                 }
 
             } catch (NumberFormatException e) {
@@ -177,7 +177,7 @@ public class ContaTerminal {
                                Invalid input! Please enter numeric values only.
                    ||====================================================================||
                                                     ||
-                    """);
+                   """);
             }
 
         }
